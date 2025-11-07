@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    background: linear-gradient(gray,red);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.outer>.inner{
+    height: 500px;
+    width: 600px;
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    border-radius: 10px 20px;
+    border-top-left-radius: 20px; 
+}
+
+.outer>h1{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.inner>.box{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white; 
+}
+
+.inner>#box1{
+    grid-row: span 2 ; 
+    border-top-left-radius: 20px;
+}
+
+.inner>#box4{
+    grid-column: span 2;
+}
+
+.inner>.box{
+     background-size: cover;
+     background-repeat: no-repeat;
+     cursor: pointer;
+     transition: all 2s ease-in; 
+}
+
+.inner>.box:hover{
+    background-position: right;
+}
+
+.inner> #box1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs3tJusx9oiBdPVz7UpmsZ8vE3YkWyZDCiyA&s);
+}
+
+.inner>#box2{
+    background-image: url(https://i.pinimg.com/236x/fe/b1/7c/feb17ce9119c96383e879bfbcd28669a.jpg);
+   
+}
+
+.inner>#box2:hover{
+    background-position: bottom;
+}
+
+.inner>#box3{
+    background-image: url(https://img.freepik.com/free-photo/beautiful-green-park_1417-1448.jpg?semt=ais_hybrid&w=740);
+}
+
+.inner>#box4{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoBuMvSuYezLE9rwI-zOJeIOmcIGfDPqOvFA&s);
+}
+
+.inner>#box5{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvmUX9RrU4tLzyR-NQ89HqWXGxKBf5t6p5rw&s);
+    border-bottom-left-radius: 20px;
+}
+
+.inner>#box6{
+    background-image: url(https://i.pinimg.com/736x/7c/5c/65/7c5c65a46722bb783ad4c50459e53aa4.jpg);
+    color:palevioletred;
+}
+
+.inner>#box7{
+    background-image: url(https://thumbs.dreamstime.com/b/two-cute-bunnies-kissing-sunny-meadow-heart-decorations-th-february-happy-valentine-s-day-two-cute-bunnies-351837857.jpg);
+}
